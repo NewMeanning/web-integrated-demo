@@ -2,9 +2,7 @@ package com.example.hadooputils.web;
 
 import com.example.hadooputils.service.HdfsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author BastetCat
@@ -22,5 +20,10 @@ public class HdfsController {
     @GetMapping(value = "/getMessage")
     public String getMessage(){
         return service.getMessage();
+    }
+
+    @PostMapping(value = "{dirName}")
+    public String mkDir(@PathVariable String dirName){
+        return service.mkDir(dirName);
     }
 }

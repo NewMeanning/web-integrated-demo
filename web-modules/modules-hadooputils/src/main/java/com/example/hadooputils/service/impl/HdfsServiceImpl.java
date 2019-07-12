@@ -3,8 +3,10 @@ package com.example.hadooputils.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.example.hadooputils.service.HdfsService;
+import com.example.hadooputils.utils.HadoopUtil;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.HashMap;
 
 /**
@@ -19,5 +21,28 @@ public class HdfsServiceImpl implements HdfsService {
         HashMap<String, String> map = new HashMap<>();
         map.put("11","11");
         return JSONObject.toJSONString(map);
+    }
+
+    @Override
+    public String mkDir(String dirName) {
+        boolean mkdir = false;
+        try {
+            HadoopUtil.getFileSystem();
+            HadoopUtil.mkdir(dirName);
+        } catch (IOException e) {
+            //e.printStackTrace();
+            return "失败";
+        }finally {
+            try {
+                HadoopUtil.closeFilseSystem();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        if (mkdir){
+            return "success";
+        }else {
+            return "fail";
+        }
     }
 }

@@ -1,6 +1,5 @@
 package com.example.hadooputils.service;
 
-import com.alibaba.fastjson.JSON;
 
 /**
  * @author BastetCat
@@ -10,4 +9,6 @@ import com.alibaba.fastjson.JSON;
 public interface HdfsService {
 
     public String getMessage();
+
+    public String mkDir(String dirName);
 }
