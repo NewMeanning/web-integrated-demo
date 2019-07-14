@@ -1,8 +1,7 @@
-package com.example.mybatis.mapper;
+package com.example.modules.mapper;
 
-import com.example.mybatis.domain.User;
+import com.example.modules.domain.User;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
 
 
 import java.util.List;
@@ -13,6 +12,6 @@ import java.util.List;
  */
 @Mapper
 public interface UserMapper {
-    @Select("select * from tb_user")
+
     List<User> selectAll();
 }

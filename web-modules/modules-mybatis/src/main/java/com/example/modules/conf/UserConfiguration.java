@@ -1,4 +1,4 @@
-package com.example.mybatis.conf;
+package com.example.modules.conf;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Configuration;
@@ -8,6 +8,6 @@ import org.springframework.context.annotation.Configuration;
  * @data 2019/7/12 23:16
  */
 @Configuration
-@MapperScan("com.example.mybatis.mapper")
+@MapperScan("com.example.modules.mapper")
 public class UserConfiguration {
 }

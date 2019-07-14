@@ -1,9 +1,8 @@
-package com.example.hadooputils.service.impl;
+package com.example.modules.service.impl;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.example.hadooputils.service.HdfsService;
-import com.example.hadooputils.utils.HadoopUtil;
+import com.example.modules.service.HdfsService;
+import com.example.modules.utils.HadoopUtil;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;

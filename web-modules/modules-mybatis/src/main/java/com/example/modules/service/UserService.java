@@ -1,9 +1,8 @@
-package com.example.mybatis.service;
+package com.example.modules.service;
 
-import com.example.mybatis.domain.User;
+import com.example.modules.domain.User;
 
 import java.util.List;
-import java.util.Map;
 
 /**
  * @author BastetCat
@@ -16,5 +15,4 @@ public interface UserService {
      */
     List<User> findAll();
 
-    Map<String,String> test();
 }

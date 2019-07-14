@@ -1,6 +1,6 @@
-package com.example.hadooputils.web;
+package com.example.modules.web;
 
-import com.example.hadooputils.service.HdfsService;
+import com.example.modules.service.HdfsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,4 +1,4 @@
-package com.example.mybatis.domain;
+package com.example.modules.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
@@ -15,10 +15,12 @@ import java.util.Date;
 @Data
 @Component
 public class User {
+
+    private String id;
     @Size(max = 50)
-    private String Name;
+    private String name;
     @Max(value = 150,message = "年龄最大不超过150")
-    private Integer Age;
+    private Integer age;
     @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GMT+8")
     private Date birthDay;
 

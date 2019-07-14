@@ -1,15 +1,15 @@
-package com.example.mybatis.service.impl;
+package com.example.modules.service.impl;
 
 
-import com.example.mybatis.domain.User;
-import com.example.mybatis.mapper.UserMapper;
-import com.example.mybatis.service.UserService;
+import com.example.modules.domain.User;
+import com.example.modules.mapper.UserMapper;
+import com.example.modules.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
+
 import java.util.List;
-import java.util.Map;
+
 
 /**
  * @author BastetCat
@@ -27,10 +27,4 @@ public class UserServiceImpl implements UserService {
         return userMapper.selectAll();
     }
 
-    @Override
-    public Map<String, String> test() {
-        HashMap<String,String> map = new HashMap<>();
-        map.put("小猪","笨蛋");
-        return map;
-    }
 }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.modules.mapper.UserMapper">
+ <!--
+    <resultMap id="唯一的标识" type="映射的pojo对象">
+        <id column="表的主键字段，或者可以为查询语句中的别名字段" jdbcType="字段类型" property="映射pojo对象的主键属性" />
+        <result column="表的一个字段（可以为任意表的一个字段）" jdbcType="字段类型" property="映射到pojo对象的一个属性（须为type定义的pojo对象中的一个属性）"/>
+        <association property="pojo的一个对象属性" javaType="pojo关联的pojo对象">
+            <id column="关联pojo对象对应表的主键字段" jdbcType="字段类型" property="关联pojo对象的主席属性"/>
+            <result  column="任意表的字段" jdbcType="字段类型" property="关联pojo对象的属性"/>
+        </association>
+        <collection property="pojo的集合属性" ofType="集合中的pojo对象">
+            <id column="集合中pojo对象对应的表的主键字段" jdbcType="字段类型" property="集合中pojo对象的主键属性" />
+            <result column="可以为任意表的字段" jdbcType="字段类型" property="集合中的pojo对象的属性" />
+        </collection>
+    </resultMap>
+-->
+    <resultMap id="user" type="com.example.modules.domain.User">
+        <id column="id" jdbcType="VARCHAR" property="id" />
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="age" jdbcType="VARCHAR" property="age"/>
+        <result column="birth_day" jdbcType="VARCHAR" property="birthDay"/>
+    </resultMap>
+
+    <select id="selectAll" resultMap="user">
+        select * from tb_user
+    </select>
+
+</mapper>
