@@ -1,6 +1,6 @@
-package com.example.modules.web;
+package com.example.hadoop.web;
 
-import com.example.modules.service.HdfsService;
+import com.example.hadoop.service.HdfsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

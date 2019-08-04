@@ -1,6 +1,6 @@
-package com.example.modules.mapper;
+package com.example.mybatis.mapper;
 
-import com.example.modules.domain.User;
+import com.example.mybatis.domain.User;
 import org.apache.ibatis.annotations.Mapper;
 
 

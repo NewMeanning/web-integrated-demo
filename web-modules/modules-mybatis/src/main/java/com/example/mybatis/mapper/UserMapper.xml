@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.modules.mapper.UserMapper">
+<mapper namespace="com.example.mybatis.mapper.UserMapper">
  <!--
     <resultMap id="唯一的标识" type="映射的pojo对象">
         <id column="表的主键字段，或者可以为查询语句中的别名字段" jdbcType="字段类型" property="映射pojo对象的主键属性" />
@@ -17,7 +17,7 @@
         </collection>
     </resultMap>
 -->
-    <resultMap id="user" type="com.example.modules.domain.User">
+    <resultMap id="user" type="com.example.mybatis.domain.User">
         <id column="id" jdbcType="VARCHAR" property="id" />
         <result column="name" jdbcType="VARCHAR" property="name"/>
         <result column="age" jdbcType="VARCHAR" property="age"/>

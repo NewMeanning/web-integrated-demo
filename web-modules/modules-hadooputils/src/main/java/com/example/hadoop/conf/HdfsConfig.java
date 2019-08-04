@@ -1,6 +1,6 @@
-package com.example.modules.conf;
+package com.example.hadoop.conf;
 
-import com.example.modules.utils.HadoopUtil;
+import com.example.hadoop.utils.HadoopUtil;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;

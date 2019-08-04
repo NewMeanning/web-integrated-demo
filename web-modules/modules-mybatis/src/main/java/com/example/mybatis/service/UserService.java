@@ -1,6 +1,6 @@
-package com.example.modules.service;
+package com.example.mybatis.service;
 
-import com.example.modules.domain.User;
+import com.example.mybatis.domain.User;
 
 import java.util.List;
 

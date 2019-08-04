@@ -1,4 +1,4 @@
-package com.example.modules.domain;
+package com.example.mybatis.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;

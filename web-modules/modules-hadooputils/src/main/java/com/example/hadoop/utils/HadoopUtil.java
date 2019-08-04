@@ -1,4 +1,4 @@
-package com.example.modules.utils;
+package com.example.hadoop.utils;
 
 
 import org.apache.hadoop.conf.Configuration;

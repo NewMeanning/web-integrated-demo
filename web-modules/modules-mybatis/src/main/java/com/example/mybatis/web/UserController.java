@@ -1,11 +1,11 @@
-package com.example.modules.web;
+package com.example.mybatis.web;
 
-import com.example.modules.domain.User;
+import com.example.mybatis.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.example.modules.service.UserService;
+import com.example.mybatis.service.UserService;
 
 import java.util.List;
 
