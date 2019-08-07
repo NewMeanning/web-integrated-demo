@@ -28,4 +28,37 @@
         select * from tb_user
     </select>
 
+    <insert id="insert" parameterType="com.example.mybatis.domain.User">
+        insert into  tb_user (
+            id,
+            name,
+            age,
+            birth_day
+        ) values (
+            #{id},
+            #{name},
+            #{age},
+            #{birthDay}
+        )
+    </insert>
+
+    <update id="update" parameterType="com.example.mybatis.domain.User">
+        update tb_user
+        <set>
+            <if test="id != null">
+                id = #{id},
+            </if>
+            <if test="name != null">
+                name = #{name},
+            </if>
+            <if test="age != null">
+                age = #{age},
+            </if>
+            <if test="birthDay != null">
+                birth_day = #{birthDay},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
 </mapper>

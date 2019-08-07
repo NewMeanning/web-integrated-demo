@@ -12,6 +12,23 @@ import java.util.List;
  */
 @Mapper
 public interface UserMapper {
-
+    /**
+     *
+     * @return
+     */
     List<User> selectAll();
+
+    /**
+     * 插入user
+     * @param user
+     * @return
+     */
+    int insert(User user);
+
+    /**
+     * 更新user
+     * @param user
+     * @return
+     */
+    int update(User user);
 }
